@@ -60,6 +60,15 @@
     ```
 
 11. To copy a list or part of it you use **slicing**
+    ```python
+    vehicles_one = ['car', 'bicycle', 'motor']
+    print(vehicles_one) # outputs: ['car', 'bicycle', 'motor']
+
+    vehicles_two = vehicles_one[:]
+    del vehicles_one[0] # deletes 'car'
+    print(vehicles_one) # outputs: ['bicycle', 'motor']
+    print(vehicles_two) # outputs: ['car', 'bicycle', 'motor']
+    ```
 12. You can test if some items exist in a list or not using the keywords `in` and `not in`, e.g.:
 
     ```python
@@ -70,5 +79,8 @@
     print(2 not in my_list)  # outputs: False
     ```
 
-13. List comprehension allows you to create new lists from existing ones in a concise and elegant way. The syntax of a list comprehension looks as follows: `[expression for element in list if conditional]`
+13. List comprehension allows you to create new lists from existing ones in a concise and elegant way. The syntax of a list comprehension looks as follows:
+        ```python
+        [expression for element in list if conditional]
+        ```
 14. You can use **nested lists** in Python to create matrices (i.e., two-dimensional lists, n-dimensional lists)
